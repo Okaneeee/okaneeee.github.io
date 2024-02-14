@@ -172,65 +172,47 @@ params:
     enable: true
     # title: "Custom Name"
     items:
-      - job: "Senior Software Developer"
-        company: "Facebook"
-        companyUrl: "https://example.com"
-        date: "Jan 2022 - present"
+      - job: "Repair technician for Apple"
+        company: "SBE France"
+        companyUrl: "https://france.sbeglobalservice.com/"
+        date: "Jun 2023 - Aug 2023"
         featuredLink:
-          enable: true
+          enable: false
           name: "View the project"
           url: "https://example.com"
-        content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
-
-      - job: "Software Developer"
-        company: "Amazon"
-        companyUrl: "https://example.com"
-        date: "Sep 2020 - Dec 2021"
+        content: |
+          I performed diagnostics on Apple devices, specializing in repairing iPhones, iPads, and AirPods.
+          I also conducted preventive and corrective maintenance on various devices. </br>
+          I've collaborated with an experienced repair team to tackle more technical issues.
+          Successfully adapted to new work environments and teams, demonstrating flexibility and adaptability.
+        
+      - job: "IT development internship"
+        company: "SBE Global"
+        companyUrl: "https://sbeglobalservice.com/"
+        date: "Apr 2023 - Jun 2023"
         featuredLink:
-          enable: true
-          url: "https://example.com"
+          enable: false
         info:
           enable: true
-          content: I worked as a software developer for more than one year in Amazon.
+          content: I was responsible for developing software to manage inventory flows and compensation.
         content: |
-          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+          Working within an IT team, I contributed to the development of software aimed at managing inventory flows and compensation.
+          This involved collaborating closely with a company partner, ensuring effective communication throughout the project.</br>
+          Once the software was ready, I facilitated its deployment into production, overseeing the transition smoothly.</br>
+          Additionally, I handled any issues that arose during the process, demonstrating problem-solving skills and ensuring minimal disruptions to operations.
 
-          - Lead backend developer for a product.
-          - Created a frontend design for a product.
-
-      - job: "Junior Software Developer"
-        company: "Apple"
-        companyUrl: "https://example.com"
-        date: "Jan 2020 - Aug 2020"
+      - job: "Volunteer"
+        company: "SPA"
+        companyUrl: "https://www.la-spa.fr"
+        date: "Oct 2022"
         info:
           enable: false
         featuredLink:
-          enable: true
-          url: "https://example.com"
+          enable: false
         content: |
-          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+          *SPA is a French animal protection society. The equivalent is the SPCA.*
 
-          - Lead backend developer for a product.
-          - Created a frontend design for a product.
-
-      - job: "UI/UX Designer"
-        company: "Netflix"
-        companyUrl: "https://example.com"
-        date: "June 2017 - Nov 2019"
-        featuredLink:
-          enable: true
-          url: "https://example.com"
-        content: |
-          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
-
-          - Lead backend developer for a product.
-          - Created a frontend design for a product.
-
-      - job: "Product Designer"
-        company: "Google"
-        companyUrl: "https://example.com"
-        date: "Feb 2016 - Mar 2017"
-        content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
+          I volunteered for a month in the local shelter. I took care of the animals, cleaned their cages, and helped the staff with their daily tasks.
 
   # Education
   education:
