@@ -1,6 +1,6 @@
 baseURL: "https://okaneeee.github.io"
 languageCode: "en-us"
-title: "Hugo Profile"
+title: "Okane | Student, Developer & Gamer"
 theme: hugo-profile
 
 outputs:
@@ -27,11 +27,11 @@ Menus:
     - identifier: blog
       name: Blog
       title: Blog posts
-      url: /blogs
+      url: /blog
       weight: 1
     - identifier: gallery
       name: Gallery
-      title: Blog posts
+      title: Gallery
       url: /gallery
       weight: 2
     #Dropdown menu
@@ -53,8 +53,8 @@ Menus:
     #   weight: 2
 
 params:
-  title: "Hugo Profile"
-  description: Text about my cool site
+  title: "Okane | Developer"
+  description: Okane's website
   # staticPath: ""  # The path to serve the static files from
   favicon: "/fav.png"
 
@@ -75,8 +75,8 @@ params:
   animate: true
 
   theme:
-    # disableThemeToggle: true
-    # defaultTheme: "light" # dark
+    disableThemeToggle: false
+    defaultTheme: "dark" # dark - light
 
   font:
     fontSize: 1rem # default: 1rem
@@ -106,7 +106,7 @@ params:
     align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
     # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
     # showBrandLogo: false # Show brand logo in nav bar | default is true
-    brandName: "Hugo Profile" # Brand name for the brand | default is the title variable
+    brandName: "Okane 🎴" # Brand name for the brand | default is the title variable
     disableSearch: false
     # searchPlaceholder: "Search"
     stickyNavBar:
@@ -123,11 +123,11 @@ params:
   # Hero
   hero:
     enable: true
-    intro: "Hi, my name is"
-    title: "Isabella."
-    subtitle: "I build things for the web"
-    content: "A passionate web app developer. I tend to make use of modern web technologies to build websites that looks great, feels fantastic, and functions correctly."
-    image: /images/hero.svg
+    intro: "'Sup? I'm"
+    title: "Anatole."
+    subtitle: "Nice to meet you✌️"
+    content: "A passionate student and developer. I try to learn something new every day. I love to keep abreast of new technologies."
+    image: /images/pfp.jpg
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
@@ -135,17 +135,17 @@ params:
       enable: true
       name: "Resume"
       url: "#"
-      download: true
+      download: false # TODO Set to true when resume is done
       newPage: false
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
-          url: https://example.com
+          url: https://github.com/Okaneeee
         - icon: fab fa-x-twitter
-          url: https://example.com
-      customIcons:
-        - icon: /fav.png
-          url: "https://example.com"
+          url: https://twitter.com/Okaneeeeeeeee_e
+      # customIcons:
+        - icon: fa-solid fa-arrow-up-right-from-square
+          url: "https://linktr.ee/okane_e"
 
   # About
   about:
