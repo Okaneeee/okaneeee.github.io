@@ -289,51 +289,51 @@ params:
     enable: true
     # title: "Custom Name"
     items:
-      - title: Hugo Profile
-        content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
+      - title: This website
+        content: A personal portfolio and blog website made with Hugo using the Hugo Profile theme, deployed with GitHub Pages.
         image: /images/projects/profile.png
         featured:
           name: Demo
-          link: https://hugo-profile.netlify.app
+          link: https://okaneeee.github.io
         badges:
           - "Hugo"
           - "Bootstrap"
-          - "Javascript"
           - "JavaScript"
         links:
           - icon: fa fa-envelope
-            url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+            url: mailto:?subject=Okane's%20Website&body=Check%20it%20out:%20https%3A%2F%2Fokaneeee.github.io
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/hugo-profile
+            url: https://github.com/Okaneeee/okaneeee.github.io
           - icon: fab fa-twitter
-            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+            url: https://twitter.com/intent/tweet?text=Check%20it%20out!%20&url=https%3A%2F%2Fokaneeee.github.io
 
-      - title: Image Converter
-        content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
-        image: /images/projects/converter.jpg
+      - title: Discord Chatbot
+        content: A small-scale neural networks chatbot in Python linked to Discord.
+        image: /images/projects/chatbot.png
         featured:
           name: Demo
-          link: https://django-converter.herokuapp.com
+          link: https://github.com/Okaneeee/discord-chatbot/releases/tag/v1.1.1
         badges:
-          - "Django"
-          - "Bootstrap"
+          - "Discord"
+          - "Neural Netwoks"
+          - "Python"
         links:
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/converter
+            url: https://github.com/Okaneeee/discord-chatbot
 
-      - title: Hugo Profile V2
-        content: A clean and simple Hugo template for personal portfolio and blog.
-        image: /images/projects/profile2.jpg
+      - title: File Renamer
+        content: A simple file renamer in Python using PyQt6. *This project is still a WIP and is on hold.
+        image: /images/projects/renamer.png
         featured:
-          name: Demo V2
-          link: https://hugo-profile-2.netlify.app
+          name: Demo
+          link: https://github.com/Okaneeee/files-renamer/releases/tag/v1.0.0/
         badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
+          - "Python"
+          - "PyQt6"
+          - "File Renaming"
         links:
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/HugoProfileV2
+            url: https://github.com/Okaneeee/files-renamer
 
   #Contact
   contact:
