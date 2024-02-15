@@ -257,7 +257,7 @@ params:
             - A Python application for stacking [FITS](https://en.wikipedia.org/wiki/FITS) images for astrophotography using the [Astropy](https://www.astropy.org) library, equipped with an interface built with [PyQt6](https://www.riverbankcomputing.com/software/pyqt/).
             - A Discord bot in Node.js facilitating communication between slash commands and a NoSQL database [MongoDB](https://www.mongodb.com/) to manage watchlists and users.
             - An introduction to the [Angular](https://angular.io) framework connecting an ERP to a website.
-            - The board game [Blokus, recreated in Python](https://github.com/anthony-eluecque/blokus-game).
+            - The board game [Blokus](https://en.wikipedia.org/wiki/Blokus), [recreated in Python](https://github.com/anthony-eluecque/blokus-game).
         featuredLink:
           enable: false
 
