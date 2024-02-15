@@ -24,33 +24,34 @@ markup:
 
 Menus:
   main:
-    - identifier: blog
-      name: Blog
-      title: Blog posts
-      url: /blog
-      weight: 1
-    - identifier: gallery
-      name: Gallery
-      title: Gallery
-      url: /gallery
-      weight: 2
-    #Dropdown menu
-    # - identifier: dropdown
-    #   title: Example dropdown menu
-    #   name: Dropdown
-    #   weight: 3
-    # - identifier: dropdown1
-    #   title: example dropdown 1
-    #   name: example 1
-    #   url: /#
-    #   parent: dropdown
+    # - identifier: blog
+    #   name: Blog
+    #   title: Blog posts
+    #   url: /blog
     #   weight: 1
-    # - identifier: dropdown2
-    #   title: example dropdown 2
-    #   name: example 2
-    #   url: /#
-    #   parent: dropdown
-    #   weight: 2
+    #Dropdown menu
+    - identifier: Blog
+      title: Blog
+      name: Blog
+      weight: 3
+    - identifier: personal-projects
+      title: Personal Projects
+      name: Personal Projects
+      url: /personal
+      parent: Blog
+      weight: 1
+    - identifier: games
+      title: Games
+      name: Games
+      url: /games
+      parent: Blog
+      weight: 2
+    - identifier: school-projects
+      title: School Projects
+      name: School Projects
+      url: /school
+      parent: Blog
+      weight: 3
 
 params:
   title: "Okane | Developer"
@@ -220,7 +221,7 @@ params:
     # title: "Custom Name"
     index: false
     items:
-      - title: "Bachelor in video game development"
+      - title: "Bachelor in Video Game Development"
         school:
           name: "University du Québec à Chicoutimi (UQAC), Chicoutimi, Québec, Canada."
           url: "https://www.uqac.ca/"
@@ -234,8 +235,8 @@ params:
           This curriculum at UQAC is undertaken as part of a dual degree program, in conjunction with the Littoral Côte d'Opale University Institute in Calais, France.
 
           Extracurricular Activities
-            - [Poule Poeuf](), a Snake game made with Unreal Engine with the collaboration of 4 students, 3 from the [NAD-UQAC](https://www.nad.ca/). 
-            - [Malum Habootus](), a Bomberman game made with Unreal Engine with the collaboration of 8 students, 6 from the [NAD-UQAC](https://www.nad.ca/). 
+            - [Poule Poeuf](), a Snake game made with Unreal Engine with the collaboration of 4 others students, including 3 from the [NAD-UQAC](https://www.nad.ca/). 
+            - [Malum Habootus](), a Bomberman game made with Unreal Engine with the collaboration of 8 others students, including 6 from the [NAD-UQAC](https://www.nad.ca/). 
       
           *Links to projets are not done yet*
       - title: "Bachelor's degree in Computer Science"
@@ -243,20 +244,20 @@ params:
           name: "Littoral Côte d'Opale University Institute (IUT), Calais, France."
           url: "https://www.iut-littoral.fr"
         date: "2021 - 2024"
-        GPA: "3.6 out of 4.0"
+        GPA: "3.33 out of 4.0"
         content: |-
           Stuyding computer science at the IUT, I learned to use C, C++, Java, Python, and SQL. I also learned to use HTML, CSS, PHP, JavaScript and some frameworks in order to develop websites. I also saw the basics of artificial intelligence, mobile development, website security, network management and virtualization using [Docker](https://www.docker.com/). Not to mention cryptography and project management using Agile methodology
 
           This curriculum at UQAC is undertaken as part of a dual degree program, in conjunction with UQAC in Chicoutimi, Québec, Canada.
 
           Extracurricular Activities
-            - An application for depositing and retrieving location-based words developed in Dart.
-            - A PHP website allowing users to view, deposit, add, and delete reviews.
-            - A [Vue.js](https://vuejs.org) [Single Page Application (SPA)](https://en.wikipedia.org/wiki/Single-page_application) Pokedex.
-            - A Python application for stacking [FITS](https://en.wikipedia.org/wiki/FITS) images for astrophotography using the [Astropy](https://www.astropy.org) library, equipped with an interface built with [PyQt6](https://www.riverbankcomputing.com/software/pyqt/).
-            - A Discord bot in Node.js facilitating communication between slash commands and a NoSQL database [MongoDB](https://www.mongodb.com/) to manage watchlists and users.
+            - A mobile application for depositing and retrieving location-based words developed in [Dart](https://dart.dev).
+            - A [PHP](https://www.php.net) website allowing users to view, deposit, add, and delete reviews.
+            - A [Vue.js](https://vuejs.org), [Single Page Application (SPA)](https://en.wikipedia.org/wiki/Single-page_application) Pokedex.
+            - A [Python](https://www.python.org) application for stacking [FITS](https://en.wikipedia.org/wiki/FITS) images for astrophotography using the [Astropy](https://www.astropy.org) library, equipped with an interface built with [PyQt6](https://www.riverbankcomputing.com/software/pyqt/).
+            - A [Discord](https://discord.com) bot in [Node.js](https://nodejs.org/en), facilitating communication between slash commands and a NoSQL database [MongoDB](https://www.mongodb.com/) to manage watchlists and users.
             - An introduction to the [Angular](https://angular.io) framework connecting an ERP to a website.
-            - The board game [Blokus, recreated in Python](https://github.com/anthony-eluecque/blokus-game).
+            - The board game [Blokus](https://en.wikipedia.org/wiki/Blokus), [recreated in Python](https://github.com/anthony-eluecque/blokus-game).
         featuredLink:
           enable: false
 
