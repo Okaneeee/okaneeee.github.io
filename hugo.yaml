@@ -258,9 +258,7 @@ params:
             - An introduction to the [Angular](https://angular.io) framework connecting an ERP to a website.
             - The board game [Blokus, recreated in Python](https://github.com/anthony-eluecque/blokus-game).
         featuredLink:
-          enable: true
-          name: "My academic record"
-          url: "https://example.com"
+          enable: false
 
   # Achievements
   achievements:
