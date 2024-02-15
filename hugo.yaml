@@ -298,12 +298,12 @@ params:
           - "Bootstrap"
           - "JavaScript"
         links:
-          - icon: fa fa-envelope
-            url: mailto:?subject=Okane's%20Website&body=Check%20it%20out:%20https%3A%2F%2Fokaneeee.github.io
+          # - icon: fa fa-envelope
+          #   url: mailto:?subject=Okane's%20Website&body=Check%20it%20out:%20https%3A%2F%2Fokaneeee.github.io
           - icon: fab fa-github
             url: https://github.com/Okaneeee/okaneeee.github.io
-          - icon: fab fa-twitter
-            url: https://twitter.com/intent/tweet?text=Check%20it%20out!%20&url=https%3A%2F%2Fokaneeee.github.io
+          # - icon: fab fa-twitter
+          #   url: https://twitter.com/intent/tweet?text=Check%20it%20out!%20&url=https%3A%2F%2Fokaneeee.github.io
 
       - title: Discord Chatbot
         content: A small-scale neural networks chatbot in Python linked to Discord.
@@ -349,7 +349,7 @@ params:
 
   footer:
     recentPosts:
-      path: "blogs"
+      path: "blog"
       count: 3
       title: Recent Posts
       enable: true
