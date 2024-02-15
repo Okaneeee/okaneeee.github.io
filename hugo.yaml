@@ -336,11 +336,12 @@ params:
             url: https://github.com/Okaneeee/files-renamer
 
   #Contact
+  # TODO: Add formspree
   contact:
-    enable: true
+    enable: false
     # title: "Custom Name"
-    content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
-    email: gurusabarisha@gmail.com
+    content: My inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+    email: example@gmail.com
     btnName: Mail me
     # formspree:
     #   enable: true # `contact.email` value will be ignored
@@ -356,11 +357,11 @@ params:
       enable: true
       disableFeaturedImage: false
     socialNetworks:
-      github: https://github.com
-      linkedin: https://linkedin.com
-      twitter: https://twitter.com
-      instagram: https://instagram.com
-      facebook: https://facebook.com
+      github: https://github.com/Okaneeee
+      # linkedin: https://linkedin.com
+      twitter: https://twitter.com/Okaneeeeeeeee_e
+      # instagram: https://instagram.com
+      # facebook: https://facebook.com
 
   # List pages like blogs and posts
   listPages:
