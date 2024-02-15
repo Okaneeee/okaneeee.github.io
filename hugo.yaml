@@ -76,7 +76,7 @@ params:
 
   theme:
     disableThemeToggle: false
-    defaultTheme: "dark" # dark - light
+    defaultTheme: "light" # dark - light
 
   font:
     fontSize: 1rem # default: 1rem
@@ -220,46 +220,51 @@ params:
     # title: "Custom Name"
     index: false
     items:
-      - title: "Master of Business Administration"
+      - title: "Bachelor in video game development"
         school:
-          name: "University of California, Berkeley"
-          url: "https://example.org"
-        date: "2013 - 2015"
-        GPA: "3.8 out of 5.0"
-        content: |-
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-      - title: "Bachelor of Science in Computer Science"
-        school:
-          name: "Massachusetts Institute of Technology"
-          url: "https://example.org"
-        date: "2009 - 2013"
-        GPA: "3.9 out of 5.0"
-        content: |-
-          I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
-          - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
-          - Face mask detection using a single convolutional neural network.
+          name: "University du Québec à Chicoutimi (UQAC), Chicoutimi, Québec, Canada."
+          url: "https://www.uqac.ca/"
+        date: "2023 - 2024"
+        GPA: "?? out of ??" # TODO: Add GPA
+        content: |- # TODO: Add links
+          Studying game development at UQAC, I am learning to use the Unreal Engine and Unity. I am also learning to use C++ and C# to develop games. 
+
+          In addition to studying video game development, I had the opportunity to select courses focused on artificial intelligence and machine learning.
+
+          This curriculum at UQAC is undertaken as part of a dual degree program, in conjunction with the Littoral Côte d'Opale University Institute in Calais, France.
 
           Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+            - [Poule Poeuf](), a Snake game made with Unreal Engine with the collaboration of 4 students, 3 from the [NAD-UQAC](https://www.nad.ca/). 
+            - [Malum Habootus](), a Bomberman game made with Unreal Engine with the collaboration of 8 students, 6 from the [NAD-UQAC](https://www.nad.ca/). 
+      
+          *Links to projets are not done yet*
+      - title: "Bachelor's degree in Computer Science"
+        school:
+          name: "Littoral Côte d'Opale University Institute (IUT), Calais, France."
+          url: "https://www.iut-littoral.fr"
+        date: "2021 - 2024"
+        GPA: "3.6 out of 4.0"
+        content: |-
+          Stuyding computer science at the IUT, I learned to use C, C++, Java, Python, and SQL. I also learned to use HTML, CSS, PHP, JavaScript and some frameworks in order to develop websites. I also saw the basics of artificial intelligence, mobile development, website security, network management and virtualization using [Docker](https://www.docker.com/). Not to mention cryptography and project management using Agile methodology
+
+          This curriculum at UQAC is undertaken as part of a dual degree program, in conjunction with UQAC in Chicoutimi, Québec, Canada.
+
+          Extracurricular Activities
+            - An application for depositing and retrieving location-based words developed in Dart.
+            - A PHP website allowing users to view, deposit, add, and delete reviews.
+            - A [Vue.js](https://vuejs.org) [Single Page Application (SPA)](https://en.wikipedia.org/wiki/Single-page_application) Pokedex.
+            - A Python application for stacking [FITS](https://en.wikipedia.org/wiki/FITS) images for astrophotography using the [Astropy](https://www.astropy.org) library, equipped with an interface built with [PyQt6](https://www.riverbankcomputing.com/software/pyqt/).
+            - A Discord bot in Node.js facilitating communication between slash commands and a NoSQL database [MongoDB](https://www.mongodb.com/) to manage watchlists and users.
+            - An introduction to the [Angular](https://angular.io) framework connecting an ERP to a website.
+            - The board game [Blokus, recreated in Python](https://github.com/anthony-eluecque/blokus-game).
         featuredLink:
           enable: true
           name: "My academic record"
           url: "https://example.com"
-      - title: "High School"
-        school:
-          name: "Thomas Jefferson High School for Science and Technology."
-          url: "https://example.org"
-        GPA: "4.2 out of 5.0"
-        featuredLink:
-          enable: true
-          url: "https://example.com"
 
   # Achievements
   achievements:
-    enable: true
+    enable: false
     # title: "Custom Name"
     items:
       - title: Google kickstart runner
@@ -294,6 +299,7 @@ params:
           - "Hugo"
           - "Bootstrap"
           - "Javascript"
+          - "JavaScript"
         links:
           - icon: fa fa-envelope
             url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
