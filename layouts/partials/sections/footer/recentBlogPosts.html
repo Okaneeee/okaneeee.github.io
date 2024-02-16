@@ -1,0 +1,73 @@
+{{ if .Site.Params.footer.recentPosts.enable | default false }}
+    {{ $root := . }}
+    {{ $combinedPosts := slice }}
+    {{/* Collect posts from each specified path */}}
+    {{ range .Site.Params.footer.recentPosts.paths }}
+        {{ $recentPostsPath := . | default "blogs" }}
+        {{ $posts := where $root.Site.RegularPages "Type" $recentPostsPath }}
+        {{ range $posts }}
+            {{ if and .Date (ne .Date nil) }}
+                {{/* Only append posts with a valid date */}}
+                {{ $combinedPosts = $combinedPosts | append . }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+
+    {{/* Manual sorting of posts by date in descending order */}}
+    {{ $sortedPosts := slice }}
+    {{ range $combinedPosts }}
+        {{ $inserted := false }}
+        {{ $postDate := .Date }}
+        {{ range $index, $element := $sortedPosts }}
+            {{ if and (not $inserted) (gt $postDate $element.Date) }}
+                {{/* Insert the post at the current position in $sortedPosts */}}
+                {{ $sortedPosts = $sortedPosts | first $index | append (slice .) | append ($sortedPosts | after $index) }}
+                {{ $inserted = true }}
+            {{ end }}
+        {{ end }}
+        {{ if not $inserted }}
+            {{/* Append the post to the end if it wasn't inserted earlier */}}
+            {{ $sortedPosts = $sortedPosts | append . }}
+        {{ end }}
+    {{ end }}
+
+    {{ $recentPostsCount := $root.Site.Params.footer.recentPosts.count | default 3 }}
+    {{ $limitedPosts := $sortedPosts | first $recentPostsCount }}
+
+    {{ if gt (len $limitedPosts) 0 }}
+        <div class="container py-3" id="recent-posts">
+            <div class="h3 text-center text-secondary py-3">
+                {{ $root.Site.Params.footer.recentPosts.title | default "Recent Posts" }}
+            </div>
+            <div class="row justify-content-center">
+                {{ range $limitedPosts }}
+                    <div class="col-lg-4 col-md-6 pt-2">
+                        <div class="card h-100">
+                            {{ if and (not ($root.Site.Params.footer.recentPosts.disableFeaturedImage | default false)) (.Params.image) }}
+                                <div class="card-header">
+                                    <a href="{{ .RelPermalink }}">
+                                        <img src="{{ .Params.image }}" class="card-img-top" alt="{{ .Title }}">
+                                    </a>
+                                </div>
+                            {{ end }}
+                            <div class="card-body bg-transparent p-3 shadow-sm">
+                                <a href="{{ .RelPermalink }}" class="primary-font card-title">
+                                    <h5 class="card-title bg-transparent"
+                                        title="{{ .Title }}">{{ .Title | truncate 25 }}</h5>
+                                </a>
+                                <div class="card-text secondary-font">
+                                    <p>{{ .Summary | truncate 300 }}</p>
+                                </div>
+                            </div>
+                            <div class="mt-auto card-footer">
+                                <span class="float-start">{{ .Date.Format ($root.Site.Params.datesFormat.articleRecent | default "January 2, 2006") }}</span>
+                                <a href="{{ .RelPermalink }}"
+                                   class="float-end btn btn-outline-info btn-sm">{{ $root.Site.Params.terms.read | default "Read" }}</a>
+                            </div>
+                        </div>
+                    </div>
+                {{ end }}
+            </div>
+        </div>
+    {{ end }}
+{{ end }}
