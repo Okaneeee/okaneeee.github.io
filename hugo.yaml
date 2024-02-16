@@ -2,6 +2,7 @@ baseURL: "https://okaneeee.github.io"
 languageCode: "en-us"
 title: "Okane | Student, Developer & Gamer"
 theme: hugo-profile
+pluralizeListTitles: false
 
 outputs:
   home:
