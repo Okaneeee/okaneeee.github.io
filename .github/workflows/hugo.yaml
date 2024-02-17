@@ -6,6 +6,9 @@ on:
   push:
     branches:
       - main
+  schedule:
+    # Runs at 10am on the 1st and 15th of each month
+    - cron: '0 10 1,15 * *'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
