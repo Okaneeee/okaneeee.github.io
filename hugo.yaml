@@ -338,10 +338,10 @@ params:
   #Contact
   # TODO: Add formspree
   contact:
-    enable: false
+    enable: true
     # title: "Custom Name"
     content: My inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
-    email: example@gmail.com
+    email: okanatole.pro@gmail.com
     btnName: Mail me
     # formspree:
     #   enable: true # `contact.email` value will be ignored
