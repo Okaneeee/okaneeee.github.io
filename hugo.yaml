@@ -184,9 +184,9 @@ params:
           content: I was developing a software to get the data from the sensors and display them in a user-friendly interface.
         content: |
           As part of a group of 4, I was developing a platform for collecting, storing and analyzing biometric data,
-          such as from electroencephalography (EEG headgear) and eye-tracking sensors.</br>
-          I worked on a 3D part using Unity and therefore C#, as well as a back-end part in Python.
-
+          such as from electroencephalography (EEG) headgear and eye-tracking sensors.</br>
+          I worked on a 3D part using Unity and therefore C#, as well as a back-end part in Python.</br>
+          I used socket programming to communicate between the two parts, CSV files to store the data and QT to create an interface.</br>
 
       - job: "Repair technician for Apple"
         company: "SBE France"
