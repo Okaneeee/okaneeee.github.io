@@ -215,7 +215,8 @@ params:
           Working within an IT team, I contributed to the development of software aimed at managing inventory flows and compensation.
           This involved collaborating closely with a company partner, ensuring effective communication throughout the project.</br>
           Once the software was ready, I facilitated its deployment into production, overseeing the transition smoothly.</br>
-          Additionally, I handled any issues that arose during the process, demonstrating problem-solving skills and ensuring minimal disruptions to operations.
+          Additionally, I handled any issues that arose during the process, demonstrating problem-solving skills and ensuring minimal disruptions to operations.<br>
+          Usage of JavaEE, Maven, Spring, Apache Tomcat, Apache ActiveMQ, and Bitbucket.
 
       - job: "Volunteer"
         company: "SPA"
