@@ -31,27 +31,27 @@ Menus:
     #   url: /blog
     #   weight: 1
     #Dropdown menu
-    - identifier: Blog
-      title: Blog
-      name: Blog
+    - identifier: Portfolio
+      title: Portfolio
+      name: Portfolio
       weight: 3
     - identifier: personal-projects
       title: Personal Projects
       name: Personal Projects
       url: /personal
-      parent: Blog
+      parent: Portfolio
       weight: 1
     - identifier: games
       title: Games
       name: Games
       url: /games
-      parent: Blog
+      parent: Portfolio
       weight: 2
     - identifier: school-projects
       title: School Projects
       name: School Projects
       url: /school
-      parent: Blog
+      parent: Portfolio
       weight: 3
 
 params:
