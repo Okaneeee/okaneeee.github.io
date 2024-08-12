@@ -237,7 +237,7 @@ params:
     # title: "Custom Name"
     index: false
     items:
-    - title: "Engineering degree in IT and Multimedia (Apprenticeship)"
+      - title: "Engineering degree in IT and Multimedia (Apprenticeship)"
         school:
           name: "Cnam-Enjmin, Angoulême, France."
           url: "https://enjmin.cnam.fr"
