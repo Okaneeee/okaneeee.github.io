@@ -276,7 +276,9 @@ params:
         date: "2021 - 2024"
         GPA: "2.87 out of 4.0"
         content: |-
-          Stuyding computer science at the IUT, I learned to use C, C++, Java, Python, and SQL. I also learned to use HTML, CSS, PHP, JavaScript and some frameworks in order to develop websites. I also saw the basics of artificial intelligence, mobile development, website security, network management and virtualization using [Docker](https://www.docker.com/). Not to mention cryptography and project management using Agile methodology as well as Scrum.
+          Stuyding computer science at the IUT, I learned to use C, C++, Java, Python, and SQL. I also learned to use HTML, CSS, PHP, JavaScript and some frameworks in order to develop websites.
+          I also saw the basics of artificial intelligence, mobile development, website security, network management and virtualization using [Docker](https://www.docker.com/).
+          Not to mention cryptography and project management using Agile methodology as well as Scrum.
 
           This curriculum at the IUT is undertaken as part of a dual degree program, in conjunction with UQAC in Chicoutimi, Québec, Canada.
 
