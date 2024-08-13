@@ -14,7 +14,7 @@ You can edit files in repository directly from github and send PRs if you find t
 - Create a new page:
 
 ```bash
-hugo new section_name/filename
+hugo new content /path/to/page.md
 ```
 
 - Build a site to the `./public/` directory:
