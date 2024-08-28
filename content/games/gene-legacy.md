@@ -39,8 +39,11 @@ Because we weren't able to add the "Genetics", the gene system wasn't implemente
 
 ## Looking back
 
+I learned a lot during this jam, like how tilemaps work in Unity, how to make 2D hitboxes and how to fix bugs.
+
 Unfortunately, the IRL problems weren't expected, we didn't have a backup plan for this because we scaled the project down to fit the 48 hours time frame with our team, knowing the experience we had. <br>
-Even if we didn't finish the game like we wanted to, we were still proud of what we accomplished in 48 hours for our first game jam. We had a lot of fun making the game and we learned a lot from it. <br>
+Even if we didn't finish the game like we wanted to, we were still proud of what we accomplished in 48 hours for our first game jam. We had a lot of fun making the game and we learned a lot from it.
+
 It definitely was a great experience and I really want to do other game jams in the future! <br>
 
 ## Screenshots
