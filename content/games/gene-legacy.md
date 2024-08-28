@@ -20,6 +20,7 @@ You can play the game [here](https://okane-e.itch.io/gene-legacy)!
 ## The team
 
 We were a team of 6 students, 5 learning video game development and 1 learning cybersecurity, all coming from UQAC, and it was our first game jam!<br>
+My role in the team was to be a game designer and programmer, level designer, and project manager.
 
 ## The development
 We used the first day to brainstorm in a Game Design Document (GDD) and come up with a game idea that would fit the theme and constraints. With our constraints, we decided to make a 2D roguelike game using [Unity](https://unity.com) where you would merge genes to get new abilities and fight against monsters in an infinite set of rooms. <br>
