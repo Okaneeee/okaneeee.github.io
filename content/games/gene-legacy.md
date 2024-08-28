@@ -47,6 +47,9 @@ Unfortunately, the original repository is in private, and I can't make a public 
 You can still play the game [here](https://okane-e.itch.io/gene-legacy) to see it for yourself! <br>
 
 ![Main menu](/images/games/gene_legacy/screen1.png)
+
 ![Starting room with tutorial](/images/games/gene_legacy/screen2.png)
+
 ![Gameplay](/images/games/gene_legacy/screen3.png)
+
 ![Gameplay](/images/games/gene_legacy/screen4.png)
