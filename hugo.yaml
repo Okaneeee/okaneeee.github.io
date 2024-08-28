@@ -412,7 +412,7 @@ params:
   # For translations
   terms:
     read: "Read"
-    toc: "Table Of Contents"
+    toc: "Table of Contents"
     copyright: "All Rights Reserved"
     pageNotFound: "Page not found"
     emailText: "Check out this site"
