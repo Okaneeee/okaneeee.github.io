@@ -261,13 +261,13 @@ params:
           This curriculum at UQAC is undertaken as part of a dual degree program, in conjunction with the Littoral Côte d'Opale University Institute in Calais, France.
 
           Extracurricular Activities
-            - [Poule Poeuf](), a Snake game made with Unreal Engine with the collaboration of 4 other students, including 3 from the [NAD-UQAC](https://www.nad.ca/). 
-            - [Malum Habootus](), a Bomberman game made with Unreal Engine with the collaboration of 8 other students, including 6 from the [NAD-UQAC](https://www.nad.ca/).
-            - [Insérer un mot de passe](), a 3D serious game made with Unreal Engine with the collaboration of 14 other students, including 11 from the [NAD-UQAC](https://www.nad.ca/).
+            - [Poule Poeufs](https://okaneeee.github.io/school/poule-poeufs/), a Snake game made with Unreal Engine with the collaboration of 4 other students, including 3 from the [NAD-UQAC](https://www.nad.ca/). 
+            - [Malum Habootus](https://okaneeee.github.io/school/malum-habootus/), a Bomberman game made with Unreal Engine with the collaboration of 8 other students, including 6 from the [NAD-UQAC](https://www.nad.ca/).
+            - [Insérer un mot de passe](https://okaneeee.github.io/school/inserer-mdp/), a 3D serious game made with Unreal Engine with the collaboration of 14 other students, including 11 from the [NAD-UQAC](https://www.nad.ca/).
             - [A 2D Flipper game]() and [a 3D FPS shooter game](), in order to learn the fundamentals and principles of Unity (like raycasts, joints, states, triggers, events...) and how an engine works.
             - [Some mini-projects]() in order to learn C++ and C# with Unreal Engine and Unity as well as AI, networking, testing and what can happen in a game development team/company.
       
-          *Links to projets are not done yet*
+          *Links to projets are not fully done yet*
 
       - title: "Bachelor's degree in Computer Science"
         school:
@@ -382,10 +382,7 @@ params:
 
   footer:
     recentPosts:
-      paths:
-        - games
-        - personal
-        - school
+      paths: [games, personal, school]
       count: 3
       title: Recent Posts
       enable: true
