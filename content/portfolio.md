@@ -22,5 +22,6 @@ If you want to find my resume, you can find it [here](https://okaneeee.github.io
 If you're looking for what I've done during my studies, it's all [here](https://okaneeee.github.io/school/)!<br>
 If you want to see the games I've made, my devlogs, and more, you can find them [here](https://okaneeee.github.io/games/)!<br>
 Or if you're interested in my personal projects, they're [here](https://okaneeee.github.io/personal/)!
+You can also find my latest posts down below. (If they're not showing, it's because I have issues with the recent posts, sorry!)
 
 Thanks for stopping by and have a great day!
