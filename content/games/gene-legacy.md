@@ -6,7 +6,7 @@ author: Anatole
 tags:
     - Game Jam
     - Unity
-    - 2D
+    - C#
 image: /images/games/gene_legacy/banner.png
 description: "Gene Legacy is a 2D roguelike game made in 48 hours for the Winter 2024 UQAC's WonderJam."
 toc: true
