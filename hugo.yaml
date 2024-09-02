@@ -385,7 +385,7 @@ params:
       paths: [games, personal, school]
       count: 3
       title: Recent Posts
-      enable: true
+      enable: false # TODO: Fix someday
       disableFeaturedImage: false
     socialNetworks:
       github: https://github.com/Okaneeee
