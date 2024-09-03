@@ -41,7 +41,8 @@ Passwords:
 Controls:
 - The player can move using `WASD` / `ZSQD` and sprint using `LShift`
 - The player can interact with the computers using `E` <br>
-<img src="/images/school/inserer_mdp/screens/controls.png" width="480" height="270"/>
+<img src="/images/school/inserer_mdp/screens/controls.png" width="480" height="270"/> <br>
+***Controls:** Movements - Sprint | Move the camera - Interact | Pause - Exit the computer (in game)*
 
 ## The game
 *The whole game is in French due to the course requirements.* <br>
@@ -50,14 +51,19 @@ The game is not available for download, but you can watch the gameplay below.
 ### Screenshots
 
 ![Main menu](/images/school/inserer_mdp/screens/main_menu.png "Main menu")
+*New Game | Settings | Credits | Quit*
 
 ![Settings](/images/school/inserer_mdp/screens/settings.png "Settings")
+***Settings:** Controls | Audio | Display | Score | Credits*
 
 ![Gameplay](/images/school/inserer_mdp/screens/gameplay.png "Gameplay")
 
 ![Mainframe & Computer](/images/school/inserer_mdp/screens/mainframe_computer.png "Mainframe & Computer")
+***Right image**: Encrypted password | Old password | New password*
 
 ![Win & Lose Menu](/images/school/inserer_mdp/screens/win_lose_menu.png "Win & Lose Menu")
+***Left image:** You've made it! Our customers' personal information remained protected, as did their money. Congratulations! Would you like to play again? Yes | No* <br>
+***Right image:** You have failed! Our customers' information such as <span title="Social Security Number" style="text-decoration: underline;">SSN</span>, names and credit card numbers have been compromised because of you! Would you like to start again? Yes | No*
 
 ### Demo
 <video width="720" height="405" controls muted>
