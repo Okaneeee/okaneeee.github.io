@@ -45,16 +45,19 @@ The game is not available for download, but you can watch the gameplay below.
 ### Screenshots
 
 ![Main menu](/images/school/malum_habootus/screens/main_menu.png "Main menu")
+***Malum Habootus** Play | Credits | Quit*
 
 ![Number of players](/images/school/malum_habootus/screens/number_select.png "Number of players")
+***Number of players:** 2 players | 3 players | 4 players*
 
 ![Player selection](/images/school/malum_habootus/screens/player_select.png "Player selection")
+***Choose your character!***
 
 ![Map](/images/school/malum_habootus/screens/map.png "The map") 
 
 ### Demo
 A demo will be available once I have a second controller.
-<!-- <video width="640" height="360" controls muted>
+<!-- <video width="720" height="405" controls muted>
     <source src="/images/school/malum_habootus/vid/demo.mp4" type="video/mp4">
     Your browser does not support the video tag.
     You can download the video <a href="/images/school/malum_habootus/vid/demo.mp4">here</a>.
