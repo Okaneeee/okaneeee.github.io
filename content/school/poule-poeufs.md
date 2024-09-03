@@ -38,6 +38,25 @@ Controls:
 - The player can move the chicken using the arrow keys, `WASD` / `ZSQD` or a controller
 - The player can pause the game using the `P` or the `ESC` key
 
-## Screenshots & Demo
+## The game
 *The whole game is in French due to the course requirements.* <br>
 The game is not available for download, but you can watch the gameplay below.
+
+### Screenshots
+
+![Main menu](/images/school/poule_poeufs/screens/main_menu.png)
+
+![Gameplay](/images/school/poule_poeufs/screens/gameplay.png)
+
+![Pause](/images/school/poule_poeufs/screens/pause.png)
+
+![Game over](/images/school/poule_poeufs/screens/game_over.png)
+
+![Leaderboard](/images/school/poule_poeufs/screens/leaderboard.png)
+
+### Demo
+<video width="640" height="360" controls muted>
+    <source src="/images/school/poule_poeufs/vid/demo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    You can download the video <a href="/images/school/poule_poeufs/vid/demo.mp4">here</a>.
+</video>
