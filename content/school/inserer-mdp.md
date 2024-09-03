@@ -40,7 +40,8 @@ Passwords:
 
 Controls:
 - The player can move using `WASD` / `ZSQD` and sprint using `LShift`
-- The player can interact with the computers using `E`
+- The player can interact with the computers using `E` <br>
+<img src="/images/school/inserer_mdp/screens/controls.png" width="480" height="270"/>
 
 ## The game
 *The whole game is in French due to the course requirements.* <br>
@@ -48,4 +49,19 @@ The game is not available for download, but you can watch the gameplay below.
 
 ### Screenshots
 
+![Main menu](/images/school/inserer_mdp/screens/main_menu.png "Main menu")
+
+![Settings](/images/school/inserer_mdp/screens/settings.png "Settings")
+
+![Gameplay](/images/school/inserer_mdp/screens/gameplay.png "Gameplay")
+
+![Mainframe & Computer](/images/school/inserer_mdp/screens/mainframe_computer.png "Mainframe & Computer")
+
+![Win & Lose Menu](/images/school/inserer_mdp/screens/win_lose_menu.png "Win & Lose Menu")
+
 ### Demo
+<video width="720" height="405" controls muted>
+    <source src="/images/school/inserer_mdp/vid/demo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    You can download the video <a href="/images/school/inserer_mdp/vid/demo.mp4">here</a>.
+</video>
