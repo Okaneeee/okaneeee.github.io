@@ -12,7 +12,7 @@ description: ""
 toc: true
 ---
 
-Poule Poeufs is a restyled version of the classic game Snake, where the player controls a chicken instead of a snake. The goal is to collect as many eggs as possible without hitting the walls or the chicks following the player. The game was developed in Unreal Engine 5 using Blueprints, in a team of 5 people, three artists and two programmers. <br>
+Poule Poeufs is a restyled version of the classic game [Snake](https://en.wikipedia.org/wiki/Snake_(video_game_genre)), where the player controls a chicken instead of a snake. The goal is to collect as many eggs as possible without hitting the walls or the chicks following the player. The game was developed in [Unreal Engine 5](https://www.unrealengine.com/unreal-engine-5) using [Blueprints](https://dev.epicgames.com/documentation/unreal-engine/blueprints-visual-scripting-in-unreal-engine), in a team of 5 people, three artists and two programmers. <br>
 This was made in the context of the course "Making a Video Game" ([8GIF185](https://programmes.uqac.ca/8GIF185) *The page is in French*).
 
 ## Retrospective
