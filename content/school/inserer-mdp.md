@@ -12,7 +12,7 @@ description: "Insérer un Mot de Passe (Insert a Password) is a serious game abo
 toc:
 ---
 
-Insérer un Mot de Passe (Insert a Password) is a [serious game](https://en.wikipedia.org/wiki/Serious_game) about cybersecurity. The player plays the role of an robot agent that needs to change the password of three computers. In order to win, the player needs to change the passwords until the main timer runs out, if any password is decrypted, the player loses. The game was developed in [Unreal Engine 5](https://www.unrealengine.com/unreal-engine-5) using [Blueprints](https://dev.epicgames.com/documentation/unreal-engine/blueprints-visual-scripting-in-unreal-engine), in a team of 15 people, eleven artists from the [NAD-UQAC](https://www.nad.ca/) and four programmers from [UQAC](https://www.uqac.ca). <br>
+Insérer un Mot de Passe (Insert a Password) is a [serious game](https://en.wikipedia.org/wiki/Serious_game) about cybersecurity. The player plays the role of a robotic agent that needs to change the password of three computers. In order to win, the player needs to change the passwords until the main timer runs out, if any password is decrypted, the player loses. The game was developed in [Unreal Engine 5](https://www.unrealengine.com/unreal-engine-5) using [Blueprints](https://dev.epicgames.com/documentation/unreal-engine/blueprints-visual-scripting-in-unreal-engine), in a team of 15 people, eleven artists from the [NAD-UQAC](https://www.nad.ca/) and four programmers from [UQAC](https://www.uqac.ca). <br>
 This was the third project made in the context of the course "Making a Video Game" ([8GIF185](https://programmes.uqac.ca/8GIF185) *The page is in French*).
 
 ## Retrospective
