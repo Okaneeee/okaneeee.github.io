@@ -4,9 +4,9 @@ date: 2024-08-28T23:38:23+02:00
 draft: false
 author: Anatole
 tags:
-    - school
-    - unreal-engine
-    - blueprints
+    - School
+    - Unreal Engine
+    - Blueprints
 image: /images/school/poule_poeufs/banner.png
 description: ""
 toc: true
