@@ -45,17 +45,21 @@ The game is not available for download, but you can watch the gameplay below.
 ### Screenshots
 
 ![Main menu](/images/school/poule_poeufs/screens/main_menu.png "Main menu")
+***Poule Poeufs:** Play | Score | Credits | Quit*
 
 ![Gameplay](/images/school/poule_poeufs/screens/gameplay.png "Gameplay")
 
 ![Pause](/images/school/poule_poeufs/screens/pause.png "Pause menu")
+***Pause:** Continue | Quit*
 
 ![Game over](/images/school/poule_poeufs/screens/game_over.png "Game over menu")
+***Game over:** You collected X chicks! | Quit*
 
 ![Leaderboard](/images/school/poule_poeufs/screens/leaderboard.png "Leaderboard")
+***Score** - Reset*
 
 ### Demo
-<video width="640" height="360" controls muted>
+<video width="720" height="405" controls muted>
     <source src="/images/school/poule_poeufs/vid/demo.mp4" type="video/mp4">
     Your browser does not support the video tag.
     You can download the video <a href="/images/school/poule_poeufs/vid/demo.mp4">here</a>.
