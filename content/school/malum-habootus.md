@@ -44,13 +44,13 @@ The game is not available for download, but you can watch the gameplay below.
 
 ### Screenshots
 
-![Main menu](/images/school/malum_habootus/screens/main_menu.png)
+![Main menu](/images/school/malum_habootus/screens/main_menu.png "Main menu")
 
-![Number of players](/images/school/malum_habootus/screens/number_select.png)
+![Number of players](/images/school/malum_habootus/screens/number_select.png "Number of players")
 
-![Player selection](/images/school/malum_habootus/screens/player_select.png)
+![Player selection](/images/school/malum_habootus/screens/player_select.png "Player selection")
 
-![Map](/images/school/malum_habootus/screens/map.png)
+![Map](/images/school/malum_habootus/screens/map.png "The map") 
 
 ### Demo
 A demo will be available once I have a second controller.

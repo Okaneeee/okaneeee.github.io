@@ -44,15 +44,15 @@ The game is not available for download, but you can watch the gameplay below.
 
 ### Screenshots
 
-![Main menu](/images/school/poule_poeufs/screens/main_menu.png)
+![Main menu](/images/school/poule_poeufs/screens/main_menu.png "Main menu")
 
-![Gameplay](/images/school/poule_poeufs/screens/gameplay.png)
+![Gameplay](/images/school/poule_poeufs/screens/gameplay.png "Gameplay")
 
-![Pause](/images/school/poule_poeufs/screens/pause.png)
+![Pause](/images/school/poule_poeufs/screens/pause.png "Pause menu")
 
-![Game over](/images/school/poule_poeufs/screens/game_over.png)
+![Game over](/images/school/poule_poeufs/screens/game_over.png "Game over menu")
 
-![Leaderboard](/images/school/poule_poeufs/screens/leaderboard.png)
+![Leaderboard](/images/school/poule_poeufs/screens/leaderboard.png "Leaderboard")
 
 ### Demo
 <video width="640" height="360" controls muted>
