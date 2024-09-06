@@ -155,7 +155,7 @@ params:
     title: "About Me"
     image: "/images/me.png"
     content: |-
-      I am a French game developer with a passion for software development and AI. I have a background in computer science and mathematics, and I have a strong interest in new/emerging technologies. I am currently studying game development at [UQAC](https://www.uqac.ca/).
+      I am a French game developer with a passion for software development and AI. I have a background in computer science and mathematics, and I have a strong interest in new/emerging technologies. This academic year, I studied game development at [UQAC](https://www.uqac.ca/).
 
       I am currently working on a [Discord chatbot](https://github.com/Okaneeee/discord-chatbot) using neural networks.
     skills:
@@ -176,6 +176,7 @@ params:
     items:
       - job: "IT development internship in a research laboratory"
         company: "MIEL-UQAC"
+        companyUrl: "https://www.uqac.ca"
         date: "May 2024 - Aug 2024"
         featuredLink:
           enable: false
