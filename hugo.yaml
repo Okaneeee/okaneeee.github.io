@@ -13,7 +13,7 @@ outputs:
     - "HTML"
     - "RSS"
 
-Paginate: 3
+pagerSize: 3
 enableRobotsTXT: true
 # disqusShortname: your-disqus-shortname
 # googleAnalytics: G-MEASUREMENT_ID
@@ -129,7 +129,7 @@ params:
     title: "Anatole."
     subtitle: "Nice to meet you✌️"
     content: "A passionate student and developer. I try to learn something new every day. I love to keep abreast of new technologies."
-    image: /images/pfp.jpg
+    image: /images/pfp.png
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
@@ -167,7 +167,7 @@ params:
         - "C#"
         - "C++"
         - "Python"
-        - "[Hugo](https://gohugo.io/)"
+        - "[Oracle Cloud](https://www.oracle.com/cloud/)"
 
   # Experience
   experience:
