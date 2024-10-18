@@ -129,7 +129,7 @@ params:
     title: "Anatole."
     subtitle: "Nice to meet you✌️"
     content: "A passionate student and developer. I try to learn something new every day. I love to keep abreast of new technologies."
-    image: /images/pfp.png
+    image: /images/pfp.jpg
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
