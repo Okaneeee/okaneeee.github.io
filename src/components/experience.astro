@@ -94,10 +94,10 @@ const experiences = [
           class={`tab-content transition-opacity duration-300 absolute top-0 left-0 w-full 
             ${index === 0 ? 'opacity-100 z-10 relative' : 'opacity-0 z-0 invisible absolute'}`}
         >
-          <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white" aria-label={exp.jobTitle}>
             {exp.jobTitle} 
             <span class="text-blue-600 dark:text-blue-400">
-              @ <a href={exp.companyUrl} target="_blank" rel="noopener noreferrer" class="hover:underline">{exp.company}</a>
+              @ <a href={exp.companyUrl} target="_blank" rel="noopener noreferrer" class="hover:underline" aria-label={exp.company}>{exp.company}</a>
             </span>
           </h3>
           <p class="text-sm text-gray-500 dark:text-gray-400 mt-1 mb-4 font-mono">{exp.date}</p>
