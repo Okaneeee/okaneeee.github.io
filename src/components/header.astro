@@ -68,19 +68,4 @@ const logoImage = "/images/me.png";
     localStorage.setItem('theme', isDark ? 'dark' : 'light');
     updateIcons();
   });
-
-  // Smart header logic
-  const header = document.getElementById('smart-header');
-  let lastScrollY = window.scrollY;
-
-  window.addEventListener('scroll', () => {
-    // Scrolling down
-    if (window.scrollY > lastScrollY && window.scrollY > 80) {
-      header?.classList.add('-translate-y-full'); // We hide the header
-    } else {
-      // Scrolling up
-      header?.classList.remove('-translate-y-full'); // We show the header back
-    }
-    lastScrollY = window.scrollY;
-  });
 </script>
