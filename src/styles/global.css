@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+/* Dark mode */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Fonts */
+@theme {
+  --font-sans: "Roboto", sans-serif;
+  
+  --font-serif: "Lora", serif;
+  
+  --font-alata: "Alata", sans-serif;
+}
+
+@layer base {
+  body {
+    font-weight: 500; /* Medium weight for better readability */
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700; /* Bold headers */
+  }
+}
