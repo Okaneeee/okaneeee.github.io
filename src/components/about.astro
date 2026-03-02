@@ -4,13 +4,13 @@ import { Image } from 'astro:assets';
 const aboutImage = "/images/me.png";
 
 const technologies = [
-  { name: "Unity", url: "https://unity.com/" },
-  // { name: "Unreal Engine", url: "https://www.unrealengine.com/" },
-  { name: "C#", url: "" },
+  { name: "Oracle Cloud", url: "https://www.oracle.com/cloud/" },
   { name: "Python", url: "" },
-  { name: "C++", url: "" },
+  // { name: "Unreal Engine", url: "https://www.unrealengine.com/" },
   { name: "Astro", url: "https://astro.build/" },
-  { name: "Oracle Cloud", url: "https://www.oracle.com/cloud/" }
+  { name: "C++", url: "" },
+  { name: "Unity", url: "https://unity.com/" },
+  { name: "C#", url: "" }
 ];
 ---
 
@@ -24,20 +24,17 @@ const technologies = [
         src={aboutImage} 
         alt="About Me" 
         width={600} height={600}
-        loading={'lazy'}
+        loading={"eager"}
         class="relative w-56 h-56 md:w-64 md:h-64 object-cover rounded-full z-10"
       />
     </div>
 
     <div class="flex-1 space-y-6 text-slate-800 dark:text-gray-300 leading-[27px] text-base">
       <p>
-        I am a French software and game developer with an interest for game design and automation. I have a background in computer science and mathematics, and I have a strong interest in new/emerging technologies. I am currently studying for an engineering degree at <a href="https://enjmin.cnam.fr" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline">Cnam-Enjmin</a>.
+        I am a French software and game developer with an interest for game design and automation. I have a background in computer science and mathematics, and I have a strong interest in new/emerging technologies.
+        I am actively working on prototypes alongside my engineering degree in interactive software development.
       </p>
-      
-      <p>
-        I don't have any public projects to show at the moment, but I am actively working on several PoC (Proof of Concept) games to build my portfolio.
-      </p>
-      
+        
       <p>Here are a few technologies I've been working with recently:</p>
       
       <ul class="grid grid-cols-2 gap-x-4 gap-y-3 mt-4 text-gray-600 dark:text-gray-400">
