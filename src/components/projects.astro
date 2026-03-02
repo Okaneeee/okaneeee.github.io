@@ -1,4 +1,6 @@
 ---
+import { Image } from 'astro:assets';
+
 const projects = [
   {
     image: "/images/projects/profile.png",
@@ -36,7 +38,12 @@ const projects = [
     {projects.map((project) => (
       <div class="flex flex-col bg-white dark:bg-gray-900 rounded-lg overflow-hidden border border-gray-200 dark:border-gray-800 transition-transform hover:-translate-y-1 hover:shadow-lg">
         
-        <img src={project.image} alt={project.title} class="w-full object-cover" />
+        <Image src={project.image}
+          alt={project.title}
+          width={1920} height={1080}
+          loading={'lazy'}
+          class="w-full object-cover"
+        />
         
         <div class="p-5 flex-grow flex flex-col">
           <div class="flex flex-wrap gap-2 mb-3">
