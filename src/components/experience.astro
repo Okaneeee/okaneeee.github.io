@@ -1,0 +1,152 @@
+---
+const experiences = [
+  {
+    id: "exp1",
+    tabTitle: "Goupil Technology",
+    jobTitle: "IT development apprenticeship",
+    company: "Goupil Technology",
+    companyUrl: "https://goupil.technology", 
+    date: "Dec 2024 - Present",
+    description: [
+      "I'm developing a Virtual Reality (VR) SaaS platform that allows users to interact with diverse points of interest (text, videos, quizzes, etc.) in immersive environments (360° videos or pictures).",
+      "I'm working with a client to create multiple VR experiences, introducing to various professions and activities such as plasterer-drywall installer or family life assistant.",
+      "Usage of Unity, C#, GitLab, and Agile methodologies."
+    ]
+  },
+  {
+    id: "exp2",
+    tabTitle: "MIEL-UQAC",
+    jobTitle: "IT development internship in a research laboratory",
+    company: "MIEL-UQAC",
+    companyUrl: "https://www.uqac.ca", 
+    date: "May 2024 - Aug 2024",
+    description: [
+      "As part of a group of 4, I was developing a platform for collecting, storing and analyzing biometric data, such as from electroencephalography (EEG) headgear and eye-tracking sensors.",
+      "I worked on a 3D part using Unity and therefore C#, as well as a back-end part in Python. I used socket programming to communicate between the two parts, CSV files to store the data and PyQt to create an interface."
+    ]
+  },
+  {
+    id: "exp3",
+    tabTitle: "SBE France",
+    jobTitle: "Repair technician for Apple",
+    company: "SBE France",
+    companyUrl: "https://france.sbeglobalservice.com/",
+    date: "June 2023 - Aug 2023",
+    description: [
+      "I performed diagnostics on Apple devices, specializing in repairing iPhones, iPads, and AirPods. I also conducted preventive and corrective maintenance on various devices.",
+      "I've collaborated with an experienced repair team to tackle more technical issues. Successfully adapted to new work environments and teams, demonstrating flexibility and adaptability."
+    ]
+  },
+  {
+    id: "exp4",
+    tabTitle: "SBE Global",
+    jobTitle: "IT development internship",
+    company: "SBE Global",
+    companyUrl: "https://sbeglobalservice.com/",
+    date: "Apr 2023 - June 2023",
+    description: [
+      "Working within an IT team, I contributed to the development of software aimed at managing inventory flows and compensation. This involved collaborating closely with a company partner, ensuring effective communication throughout the project.",
+      "Once the software was ready, I facilitated its deployment into production, overseeing the transition smoothly.",
+      "Additionally, I handled any issues that arose during the process, demonstrating problem-solving skills and ensuring minimal disruptions to operations.",
+      "Usage of JavaEE, Maven, Spring, Apache Tomcat, Apache ActiveMQ, and Bitbucket."
+    ]
+  },
+  {
+    id: "exp5",
+    tabTitle: "SPA",
+    jobTitle: "Volunteer ",
+    company: "SPA",
+    companyUrl: "https://www.la-spa.fr",
+    date: "Oct 2022",
+    description: [
+      "I volunteered for a month in the local shelter. I took care of the animals, cleaned their cages, and helped the staff with their daily tasks.", 
+      "(SPA is a French animal protection society. An equivalent would be the SPCA.)"
+    ]
+  }
+];
+---
+
+<section id="experience" class="py-16">
+  <h2 class="text-3xl font-bold mb-8 text-gray-900 dark:text-white flex items-center gap-2">
+    <span class="text-blue-600 dark:text-blue-400 text-xl">02.</span> Experience
+  </h2>
+  
+  <div class="flex flex-col md:flex-row gap-4 md:gap-8">
+    <div class="flex md:flex-col overflow-x-auto border-b md:border-b-0 md:border-l border-gray-200 dark:border-gray-800 md:min-w-[200px] z-10">
+      {experiences.map((exp, index) => (
+        <button
+          class={`tab-btn text-left px-4 py-3 text-sm font-medium transition-all duration-200 whitespace-nowrap md:whitespace-normal
+            ${index === 0 
+              ? 'text-blue-600 dark:text-blue-400 bg-blue-50/50 dark:bg-blue-900/20 border-b-2 md:border-b-0 md:border-l-2 border-blue-600 dark:border-blue-400 md:-ml-[1px]' 
+              : 'text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800/50 border-b-2 md:border-b-0 md:border-l-2 border-transparent md:-ml-[1px] hover:text-blue-600 dark:hover:text-blue-400'
+            }`}
+          data-target={exp.id}
+        >
+          {exp.tabTitle}
+        </button>
+      ))}
+    </div>
+
+    <div class="flex-1 relative min-h-[250px] mt-4 md:mt-0">
+      {experiences.map((exp, index) => (
+        <div
+          id={exp.id}
+          class={`tab-content transition-opacity duration-300 absolute top-0 left-0 w-full 
+            ${index === 0 ? 'opacity-100 z-10 relative' : 'opacity-0 z-0 invisible absolute'}`}
+        >
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+            {exp.jobTitle} 
+            <span class="text-blue-600 dark:text-blue-400">
+              @ <a href={exp.companyUrl} target="_blank" rel="noopener noreferrer" class="hover:underline">{exp.company}</a>
+            </span>
+          </h3>
+          <p class="text-sm text-gray-500 dark:text-gray-400 mt-1 mb-4 font-mono">{exp.date}</p>
+          
+          <ul class="list-none space-y-3 text-gray-700 dark:text-gray-300">
+            {exp.description.map(item => (
+              <li class="flex gap-3 items-start">
+                <span class="text-blue-600 dark:text-blue-400 mt-1 text-sm">▹</span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<script>
+  // Tab system
+  const setupTabs = () => {
+    const tabs = document.querySelectorAll('.tab-btn');
+    const contents = document.querySelectorAll('.tab-content');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Resetting all tabs
+        tabs.forEach(t => {
+          t.className = "tab-btn text-left px-4 py-3 text-sm font-medium transition-all duration-200 whitespace-nowrap md:whitespace-normal text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800/50 border-b-2 md:border-b-0 md:border-l-2 border-transparent md:-ml-[1px] hover:text-blue-600 dark:hover:text-blue-400";
+        });
+
+        // Highlighting the active tab
+        tab.className = "tab-btn text-left px-4 py-3 text-sm font-medium transition-all duration-200 whitespace-nowrap md:whitespace-normal text-blue-600 dark:text-blue-400 bg-blue-50/50 dark:bg-blue-900/20 border-b-2 md:border-b-0 md:border-l-2 border-blue-600 dark:border-blue-400 md:-ml-[1px]";
+
+        // Hiding all contents
+        contents.forEach(c => {
+          c.className = "tab-content transition-opacity duration-300 absolute top-0 left-0 w-full opacity-0 z-0 invisible";
+        });
+
+        // Showing the targeted content
+        const targetId = tab.getAttribute('data-target');
+        // @ts-ignore - This is to ignore the fact that getElementById might return null, but it wont.
+        const targetContent = document.getElementById(targetId);
+        if (targetContent) {
+          targetContent.className = "tab-content transition-opacity duration-300 absolute top-0 left-0 w-full opacity-100 z-10 relative";
+        }
+      });
+    });
+  };
+
+  setupTabs();
+</script>
