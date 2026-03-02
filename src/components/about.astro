@@ -1,0 +1,57 @@
+---
+const aboutImage = "/images/me.png";
+
+const technologies = [
+  { name: "Unity", url: "https://unity.com/" },
+  // { name: "Unreal Engine", url: "https://www.unrealengine.com/" },
+  { name: "C#", url: "" },
+  { name: "Python", url: "" },
+  { name: "C++", url: "" },
+  { name: "Astro", url: "https://astro.build/" },
+  { name: "Oracle Cloud", url: "https://www.oracle.com/cloud/" }
+];
+---
+
+<section id="about" class="py-16 md:py-24">
+  <h2 class="text-3xl font-serif text-center mb-12 text-gray-700 dark:text-blue-500">About Me</h2>
+  
+  <div class="flex flex-col md:flex-row items-center md:items-start gap-10 md:gap-16">
+    <div class="flex-shrink-0 relative">
+      <div class="absolute inset-0 bg-gray-200 dark:bg-gray-800 rounded-full blur-xl opacity-50"></div>
+      <img 
+        src={aboutImage} 
+        alt="About Me" 
+        class="relative w-56 h-56 md:w-64 md:h-64 object-cover rounded-full z-10"
+      />
+    </div>
+
+    <div class="flex-1 space-y-6 text-slate-800 dark:text-gray-300 leading-[27px] text-base">
+      <p>
+        I am a French game and software developer with a passion for game design and automation. I have a background in computer science and mathematics, and I have a strong interest in new/emerging technologies. I am currently studying for an engineering degree at <a href="https://enjmin.cnam.fr" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline">Cnam-Enjmin</a>.
+      </p>
+      
+      <p>
+        I don't have any public projects to show at the moment, but I am actively working on several PoC (Proof of Concept) games to build my portfolio.
+      </p>
+      
+      <p>Here are a few technologies I've been working with recently:</p>
+      
+      <ul class="grid grid-cols-2 gap-x-4 gap-y-3 mt-4 text-gray-600 dark:text-gray-400">
+        {technologies.map((tech) => (
+          <li class="flex items-center gap-2">
+            <span class="text-blue-500 text-xs">▹</span>
+            
+            {/* Display link if url exists */}
+            {tech.url ? (
+              <a href={tech.url} target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline transition-colors">
+                {tech.name}
+              </a>
+            ) : (
+              <span>{tech.name}</span>
+            )}
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</section>
