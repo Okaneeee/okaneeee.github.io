@@ -42,4 +42,33 @@ const { title = "Portfolio" } = Astro.props;
     </main>
     <Footer />
   </body>
+  
+  <button 
+      id="scrollToTopBtn"
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" 
+      class="fixed bottom-8 right-8 p-3 bg-[#EDF3F9] dark:bg-[#011336] text-slate-800 dark:text-gray-200 border border-blue-100 dark:border-[#1e3a8a]/30 hover:bg-blue-600 hover:border-blue-600 hover:text-white dark:hover:bg-blue-600 dark:hover:border-blue-600 dark:hover:text-white transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-1 rounded-xl z-50 group opacity-0 invisible translate-y-4"
+      aria-label="Scroll to top"
+    >
+      <svg class="w-6 h-6 transition-transform duration-300 group-hover:-translate-y-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7"></path>
+      </svg>
+    </button>
+
+    <script>
+      // Logique pour afficher/cacher le bouton selon le scroll
+      const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+      
+      window.addEventListener('scroll', () => {
+        // Si on descend de plus de 300 pixels, on l'affiche avec une animation
+        if (window.scrollY > 300) {
+          scrollToTopBtn?.classList.remove('opacity-0', 'invisible', 'translate-y-4');
+          scrollToTopBtn?.classList.add('opacity-100', 'visible', 'translate-y-0');
+        } else {
+          // Sinon, on le cache
+          scrollToTopBtn?.classList.add('opacity-0', 'invisible', 'translate-y-4');
+          scrollToTopBtn?.classList.remove('opacity-100', 'visible', 'translate-y-0');
+        }
+      });
+    </script>
+  </body>
 </html>
