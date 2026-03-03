@@ -10,6 +10,7 @@ const projectSchema = z.object({
   githubUrl: z.string().optional(),
   demoUrl: z.string().optional(),
   date: z.date(),
+  badgeImage: z.string().optional(),
 });
 
 // Apply the rules to the collections
