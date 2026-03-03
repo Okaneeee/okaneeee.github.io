@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../layouts/baseLayout.astro';
+import Experience from '../components/experience.astro';
+import Education from '../components/education.astro';
+---
+
+<BaseLayout title="Anatole | Résumé">
+  
+  <div class="py-12 md:py-20 max-w-3xl mx-auto text-center border-b border-gray-200 dark:border-gray-800 mb-8">
+    <h1 class="text-4xl md:text-5xl font-bold text-slate-800 dark:text-white mb-6">My Résumé</h1>
+    <p class="text-lg text-slate-600 dark:text-gray-400 leading-relaxed">
+      A comprehensive overview of my academic background and professional experience. 
+      Discover the journey and the skills that shaped my profile as a software and game developer.
+    </p>
+  </div>
+  
+  <Experience />
+  <Education />
+  
+  <div class="py-16 mt-8 text-center border-t border-gray-200 dark:border-gray-800">
+    <h2 class="text-2xl font-bold text-slate-800 dark:text-white mb-8">Wanna see more?</h2>
+    <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+      <a href="/projects" class="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium shadow-md hover:shadow-lg">
+        See all Projects
+      </a>
+      <a href="/games" class="px-8 py-3 bg-slate-800 dark:bg-slate-200 text-white dark:text-slate-900 rounded-lg hover:bg-slate-900 dark:hover:bg-white transition-colors font-medium shadow-md hover:shadow-lg">
+        See all Games
+      </a>
+    </div>
+  </div>
+
+</BaseLayout>
