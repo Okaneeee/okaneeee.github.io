@@ -1,37 +1,26 @@
-### HUGO
-# Generated files by hugo
-/public/
-/resources/_gen/
-/assets/jsconfig.json
-hugo_stats.json
+# build output
+dist/
+# generated types
+.astro/
 
-# Executable may be added to repository
-hugo.exe
-hugo.darwin
-hugo.linux
+# dependencies
+node_modules/
 
-# Temporary lock file while building
-/.hugo_build.lock
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
-### GOLANG
-# If you prefer the allow list template instead of the deny list, see community template:
-# https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
-#
-# Binaries for programs and plugins
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
+# environment variables
+.env
+.env.production
 
-# Test binary, built with `go test -c`
-*.test
+# macOS-specific files
+.DS_Store
 
-# Output of the go coverage tool, specifically when used with LiteIDE
-*.out
+# jetbrains setting folder
+.idea/
 
-# Dependency directories (remove the comment below to include it)
-# vendor/
-
-# Go workspace file
-go.work
+# vscode setting folder
+.vscode/

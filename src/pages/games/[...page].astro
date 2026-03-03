@@ -1,0 +1,124 @@
+---
+import BaseLayout from '../../layouts/baseLayout.astro';
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+
+// @ts-ignore
+export async function getStaticPaths({ paginate }) {
+  // Getting all articles from src/content/games/
+  const allGames = await getCollection('games');
+
+  // Sorting the games from newest to oldest
+  const sortedGames = allGames.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+  // Creating pagination with a maximum of 9 articles per page
+  return paginate(sortedGames, { pageSize: 9 });
+}
+
+const { page } = Astro.props;
+
+const formatDate = (date: Date) => {
+  return date.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric'
+  });
+};
+---
+
+<BaseLayout title="Games | Anatole">
+  
+  <div class="py-12 md:py-20 max-w-4xl mx-auto text-center border-b border-gray-200 dark:border-gray-800 mb-12 reveal reveal-1">
+    <h1 class="text-4xl md:text-5xl font-bold text-slate-800 dark:text-white mb-6">My Game Collection</h1>
+    <p class="text-lg text-slate-600 dark:text-gray-400 leading-relaxed">
+      Whether they are personal games, school assignments, or just experiments, you'll find them here.
+      Discover the gameplay mechanics, the engines I used, and the post-mortems of these projects.
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 reveal reveal-2">
+    {/* @ts-ignore */}
+    {page.data.map((game) => (
+      <div class="flex flex-col bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-sm hover:shadow-lg border border-gray-200 dark:border-gray-800 transition-all duration-300 h-full group">
+        
+        <a href={`/games/${game.slug}`} class="block overflow-hidden border-b border-gray-100 dark:border-gray-800 relative">
+          {/* @ts-ignore */}
+          <Image
+            src={game.data.image} 
+            alt={game.data.title} 
+            width={1920} height={1080}
+            loading={page.data.indexOf(game) < 3 ? "eager" : "lazy"} // Eagerly load only the first 3 images for better performance
+            class="w-full h-52 object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+          
+          {/* Optional Badge Overlay */}
+          {game.data.badgeImage && (
+            <div class="absolute bottom-0 right-0 p-1.5 rounded-lg shadow-lg z-10 transition-transform duration-300 group-hover:scale-110">
+              {/* @ts-ignore */}              
+              <Image 
+                src={game.data.badgeImage} 
+                alt="Badge" 
+                width={10} height={10}
+                loading={page.data.indexOf(game) < 3 ? "eager" : "lazy"} // Eagerly load only the first 3 images for better performance
+                class="w-10 h-10 object-contain"
+              />
+            </div>
+          )}
+        </a>
+        
+        <div class="p-6 md:p-8 flex-grow flex flex-col">
+          <a href={`/games/${game.slug}`}>
+            <h2 class="text-2xl font-serif font-bold text-slate-800 dark:text-white mb-3 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">{game.data.title}</h2>
+          </a>
+          
+          <p class="text-slate-600 dark:text-gray-400 text-base leading-relaxed flex-grow line-clamp-3">
+            {game.data.description}
+          </p>
+          
+          <div class="mt-8 pt-5 border-t border-gray-100 dark:border-gray-800 flex justify-between items-center">
+            <span class="text-sm font-sans font-medium text-slate-500 dark:text-gray-400">
+              {formatDate(game.data.date)}
+            </span>
+            
+            <a href={`/games/${game.slug}`} class="text-sm font-sans font-medium px-4 py-1.5 rounded-lg border border-gray-200 dark:border-gray-700 text-slate-700 dark:text-gray-300 hover:bg-[#EDF3F9] hover:border-blue-200 hover:text-blue-600 dark:hover:bg-[#011336] dark:hover:border-[#1e3a8a]/50 dark:hover:text-blue-400 transition-all duration-300">
+              Read
+            </a>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+
+  <!-- Pagination -->
+  {/* @ts-ignore */}
+  {page.lastPage > 1 && (
+    <div class="flex justify-center items-center gap-6 py-8">
+      {/* @ts-ignore */}
+      {page.url.prev ? ( /* @ts-ignore */
+        <a href={page.url.prev} aria-label="Previous Page" class="px-5 py-2 rounded-lg bg-[#EDF3F9] dark:bg-[#011336] text-slate-800 dark:text-gray-200 border border-blue-100 dark:border-[#1e3a8a]/30 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 transition-colors font-medium">
+          &larr; Previous
+        </a>
+      ) : (
+        <span class="px-5 py-2 rounded-lg bg-gray-100 dark:bg-gray-800/50 text-gray-400 dark:text-gray-600 cursor-not-allowed font-medium">
+          &larr; Previous
+        </span>
+      )}
+      
+      <span class="text-slate-600 dark:text-gray-400 font-medium font-sans">
+        {/* @ts-ignore */}
+        Page {page.currentPage} of {page.lastPage}
+      </span>
+      
+      {/* @ts-ignore */}
+      {page.url.next ? ( /* @ts-ignore */
+        <a href={page.url.next} aria-label="Next Page" class="px-5 py-2 rounded-lg bg-[#EDF3F9] dark:bg-[#011336] text-slate-800 dark:text-gray-200 border border-blue-100 dark:border-[#1e3a8a]/30 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 transition-colors font-medium">
+          Next &rarr;
+        </a>
+      ) : (
+        <span class="px-5 py-2 rounded-lg bg-gray-100 dark:bg-gray-800/50 text-gray-400 dark:text-gray-600 cursor-not-allowed font-medium">
+          Next &rarr;
+        </span>
+      )}
+    </div>
+  )}
+</BaseLayout>
