@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/baseLayout.astro';
 import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
 
 // @ts-ignore
 export async function getStaticPaths({ paginate }) {
@@ -41,7 +42,14 @@ const formatDate = (date: Date) => {
       <div class="flex flex-col bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-sm hover:shadow-lg border border-gray-200 dark:border-gray-800 transition-all duration-300 h-full group">
         
         <a href={`/projects/${project.slug}`} class="block overflow-hidden border-b border-gray-100 dark:border-gray-800 relative">
-          <img src={project.data.image} alt={project.data.title} class="w-full h-52 object-cover transition-transform duration-500 group-hover:scale-105" />
+          {/* @ts-ignore */}
+          <Image
+            src={project.data.image} 
+            alt={project.data.title} 
+            width={1920} height={1080}
+            loading={page.data.indexOf(project) < 3 ? "eager" : "lazy"} // Eagerly load only the first 3 images for better performance
+            class="w-full h-52 object-cover transition-transform duration-500 group-hover:scale-105"
+          />
         </a>
         
         <div class="p-6 md:p-8 flex-grow flex flex-col">
@@ -73,7 +81,7 @@ const formatDate = (date: Date) => {
     <div class="flex justify-center items-center gap-6 py-8">
       {/* @ts-ignore */}
       {page.url.prev ? ( /* @ts-ignore */
-        <a href={page.url.prev} class="px-5 py-2 rounded-lg bg-[#EDF3F9] dark:bg-[#011336] text-slate-800 dark:text-gray-200 border border-blue-100 dark:border-[#1e3a8a]/30 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 transition-colors font-medium">
+        <a href={page.url.prev} aria-label="Previous Page" class="px-5 py-2 rounded-lg bg-[#EDF3F9] dark:bg-[#011336] text-slate-800 dark:text-gray-200 border border-blue-100 dark:border-[#1e3a8a]/30 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 transition-colors font-medium">
           &larr; Previous
         </a>
       ) : (
@@ -89,7 +97,7 @@ const formatDate = (date: Date) => {
       
       {/* @ts-ignore */}
       {page.url.next ? ( /* @ts-ignore */
-        <a href={page.url.next} class="px-5 py-2 rounded-lg bg-[#EDF3F9] dark:bg-[#011336] text-slate-800 dark:text-gray-200 border border-blue-100 dark:border-[#1e3a8a]/30 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 transition-colors font-medium">
+        <a href={page.url.next} aria-label="Next Page" class="px-5 py-2 rounded-lg bg-[#EDF3F9] dark:bg-[#011336] text-slate-800 dark:text-gray-200 border border-blue-100 dark:border-[#1e3a8a]/30 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 transition-colors font-medium">
           Next &rarr;
         </a>
       ) : (
