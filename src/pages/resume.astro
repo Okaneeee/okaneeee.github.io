@@ -6,7 +6,7 @@ import Education from '../components/education.astro';
 
 <BaseLayout title="Anatole | Résumé">
   
-  <div class="py-12 md:py-20 max-w-4xl mx-auto text-center border-b border-gray-200 dark:border-gray-800 mb-8">
+  <div class="py-12 md:py-20 max-w-4xl mx-auto text-center border-b border-gray-200 dark:border-gray-800 mb-8 reveal reveal-1">
     <h1 class="text-4xl md:text-5xl font-bold text-slate-800 dark:text-white mb-6">My Résumé</h1>
     <p class="text-lg text-slate-600 dark:text-gray-400 leading-relaxed">
       A comprehensive overview of my academic background and professional experience. </br>
@@ -14,8 +14,13 @@ import Education from '../components/education.astro';
     </p>
   </div>
   
-  <Experience />
-  <Education />
+  <div class="reveal reveal-2">
+    <Experience />
+  </div>
+
+  <div class="reveal reveal-3">
+    <Education />
+  </div>
   
   <div class="mt-14 flex flex-col sm:flex-row justify-center items-center gap-6">
     <a href="/projects" class="group flex items-center justify-center gap-2 px-8 py-3 bg-[#EDF3F9] dark:bg-[#011336] text-slate-800 dark:text-gray-200 border border-blue-100 dark:border-[#1e3a8a]/30 hover:bg-blue-600 hover:border-blue-600 hover:text-white dark:hover:bg-blue-600 dark:hover:border-blue-600 dark:hover:text-white transition-all duration-300 font-medium shadow-md hover:shadow-lg hover:-translate-y-1 rounded-lg">
