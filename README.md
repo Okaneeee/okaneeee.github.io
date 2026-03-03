@@ -1,6 +1,6 @@
 # [okaneeee.github.io](https://okaneeee.github.io)
 
-[![Deploy Site to GH-Pages](TODO: add badge)](TODO: add link to deploy action)
+[![Deploy to GitHub Pages](https://github.com/Okaneeee/okaneeee.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/Okaneeee/okaneeee.github.io/actions/workflows/deploy.yml)
 
 Hi,  
 Welcome to the source code of my personal website ✌️.
